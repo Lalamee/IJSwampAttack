@@ -13,6 +13,8 @@ public class Player : MonoBehaviour
     private int _currentHealth;
     private Animator _animator;
     
+    public int Money { get; private set; }
+    
     private void Start()
     {
         _currentWeapon = _weapons[0];
@@ -26,5 +28,17 @@ public class Player : MonoBehaviour
         {
             _currentWeapon.Shoot(_shootPoint);
         }
+    }
+
+    public void ApplyDamage(int damage)
+    {
+        _currentHealth -= damage;
+        
+        if(_currentHealth <= 0)
+            Destroy(gameObject);
+    }
+    private void OnEnemyDied(int reward)
+    {
+        Money += reward;
     }
 }
