@@ -1,9 +1,5 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Timeline.Actions;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class Shop : MonoBehaviour
 {
