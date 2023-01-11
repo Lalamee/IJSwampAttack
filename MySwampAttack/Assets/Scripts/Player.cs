@@ -28,7 +28,7 @@ public class Player : MonoBehaviour
     
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && Time.timeScale != 0)
         {
             _currentWeapon.Shoot(_shootPoint);
         }
