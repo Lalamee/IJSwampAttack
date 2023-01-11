@@ -5084,11 +5084,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _waves:
-  - Template: {fileID: 8135024536552367784, guid: ba1b427fb1d9b564d9e46bc7c5ad2752, type: 3}
+  - enemyTemplates:
+    - {fileID: 8135024536552367784, guid: ba1b427fb1d9b564d9e46bc7c5ad2752, type: 3}
     Delay: 1
     Count: 5
-  - Template: {fileID: 8135024536552367784, guid: ba1b427fb1d9b564d9e46bc7c5ad2752, type: 3}
-    Delay: 0.75
+  - enemyTemplates:
+    - {fileID: 8135024536552367784, guid: ba1b427fb1d9b564d9e46bc7c5ad2752, type: 3}
+    - {fileID: 7622353605119365607, guid: 96c924aba26a36b4583fd945e95226ab, type: 3}
+    Delay: 2.5
     Count: 10
   _spawnPoint: {fileID: 1580893751}
   _player: {fileID: 1830080274}
