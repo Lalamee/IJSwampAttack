@@ -8,7 +8,7 @@ public class Uzi : Weapon
     
     public override void Shoot(Transform shootPoint)
     {
-        var firingBurstBullet =  StartCoroutine(FiringBurst(shootPoint));
+        StartCoroutine(FiringBurst(shootPoint));
     }
 
     private IEnumerator FiringBurst(Transform spawnPoint)
