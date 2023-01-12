@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Uzi : Weapon
 {
-    private float _delay = 0.3f;
+    private float _delay = 0.1f;
     private int _countBullet = 3;
     
     public override void Shoot(Transform shootPoint)

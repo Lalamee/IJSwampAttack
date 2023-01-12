@@ -30,7 +30,6 @@ public class Player : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && Time.timeScale != 0)
         {
-            gameObject.SetActive(true);
             _currentWeapon.Shoot(_shootPoint);
         }
     }
